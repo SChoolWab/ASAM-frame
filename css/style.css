@@ -1,9 +1,10 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   border: 0;
 }
+
 @font-face {
   font-family: LeelaUIb;
   src: url(LeelaUIb.ttf);
@@ -17,9 +18,9 @@ body {
   background-attachment: fixed;
   background-size: cover;
   font-family: LeelaUIb,
-  Arial,
-  Helvetica,
-  sans-serif;
+    Arial,
+    Helvetica,
+    sans-serif;
 }
 
 .container {
@@ -48,14 +49,16 @@ h1 a {
   text-align: center;
   margin: 0 auto;
 }
+
 input[type=text],
 input[type=button] {
   display: none;
 }
 
-input {
+input,
+.btn {
   width: 100%;
-  background:#fff;
+  background: #fff;
   border: none;
   border-radius: 5px;
   font-style: 25px;
@@ -63,11 +66,13 @@ input {
   font-weight: 600;
   padding: 10px 0;
   margin: 5px auto;
+  text-decoration: none;
 }
 
 input:hover,
 input:focus,
-input:active {
+input:active,
+.btn {
   background-color: orange;
   color: #fff;
 }
@@ -121,9 +126,11 @@ img {
   margin: 25px auto;
   display: none;
 }
+
 #inputArea {
   display: block;
 }
+
 .gap {
   width: 100%;
   height: 2px;
