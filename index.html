@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>ASAM Photo frame by Sofiqul Islam</title>
   <link rel="stylesheet" href="css/style.css">
   <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
@@ -10,16 +11,16 @@
 
 <body>
   <div class="container">
-    <div id="test-subject">
-      <!-- Output Here -->
+    <h1>ASAM Photo Frame by <a href="m.me/SChoolWab">Sofiqul Islam</a></h1>
+    <div class="gap"></div>
+    <div class="note">
+      <i>To get the best quality images, please Upload 450 x 500 px</i>
+    </div>
+      <!-- Input Here -->
       <div class="input">
-        <h1>ASAM Photo Frame by <a href="m.me/SChoolWab">Sofiqul Islam</a></h1>
-        <div class="note">
-          <i>To get the best quality images, please Upload 450 x 500 px</i>
-        </div>
-        <input type="file" accept="image/*">
-        <input type="text" name="name" id="text" value="" placeholder="Your Name">
-        <input type="submit" name="submit" id="submit" value="Submit" onclick="showFile()">
+        <input type="file" onchange="showFile()" accept=" image/*">
+        <input type="text" onchange="writeName()" name="name" id="text" value="" placeholder="Your Name">
+        <!-- <input type="submit" name="submit" id="submit" value="Submit" onclick="showFile()"> -->
       </div>
       <!-- Output Here -->
       <section id="screen" class="screen">
@@ -28,7 +29,6 @@
         <img src="img/frame.png" id="frame" alt="frame">
         <h1 id="name"></h1>
       </section>
-    </div>
 
     <div class="input">
       <input type="button" onclick="javascript:generateScreenshot()" value="Create Now">
