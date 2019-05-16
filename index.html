@@ -1,38 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>ASAM Photo frame by Sofiqul Islam</title>
   <link rel="stylesheet" href="css/style.css">
   <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
 </head>
+
 <body>
-  <div>
+  <div class="container">
     <div id="test-subject">
       <!-- Output Here -->
       <div class="input">
         <h1>ASAM Photo Frame by <a href="m.me/SChoolWab">Sofiqul Islam</a></h1>
+        <div class="note">
+          <i>To get the best quality images, please Upload 450 x 500 px</i>
+        </div>
         <input type="file" accept="image/*">
-        <input type="text" name="name" id="text" value="Your Name">
+        <input type="text" name="name" id="text" value="" placeholder="Your Name">
         <input type="submit" name="submit" id="submit" value="Submit" onclick="showFile()">
       </div>
       <!-- Output Here -->
       <section id="screen" class="screen">
         <!-- <div class="canvas" id="the-link"> -->
-          <img src="img/mizan.jpg" id="image" alt="image">
-          <img src="img/frame.png" id="frame" alt="frame">
-          <h1 id="name"></h1>
-        </div>
+        <img src="img/mizan.jpg" id="image" alt="image">
+        <img src="img/frame.png" id="frame" alt="frame">
+        <h1 id="name"></h1>
       </section>
     </div>
-  </div>
-  <div class="input">
-    <input type="button" onclick="javascript:generateScreenshot()" value="Create Now">
-  </div>
-  <section id="test-result">
-    <div><img src="" id="screenshot" alt="Plese Fill-up This Form then hit the create Button"></div>
-    <pre id="size"></pre>
-  </section>
+
+    <div class="input">
+      <input type="button" onclick="javascript:generateScreenshot()" value="Create Now">
+    </div>
+    <section id="test-result">
+      <div><img src="" id="screenshot" alt="Plese Fill-up This Form then hit the create Button"></div>
+      <pre id="size"></pre>
+    </section>
   </div>
   <script src='js/html2canvas.min.js'></script>
   <script src="js/index.js"></script>
