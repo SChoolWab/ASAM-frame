@@ -2,6 +2,10 @@
   font-family: LeelaUIb;
   src: url(LeelaUIb.ttf);
 }
+body {
+  width: 450px;
+  margin: 0 auto;
+}
 h1 {
   font-family: LeelaUIb, Arial, Helvetica, sans-serif;
   color: orange;
@@ -15,7 +19,6 @@ h1 a {
 }
 .input {
   width: 100%;
-  max-width: 400px;
   text-align: center;
   margin: 0 auto;
 }
@@ -41,6 +44,7 @@ input:active {
   height: 500px;
   position: relative;
   margin: 0 auto;
+  display: none;
 }
 img {
   width: 100%;
@@ -65,9 +69,8 @@ img {
   line-height: 25px;
   text-transform: uppercase;
 }
-
 #test-result {
   width: 100%;
-  max-width: 1000px;
   margin: 25px auto;
+  display: none;
 }

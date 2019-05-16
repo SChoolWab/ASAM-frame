@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
-  <title>ASAM Photo frame</title>
+  <title>ASAM Photo frame by Sofiqul Islam</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
 </head>
-
 <body>
   <div>
     <div id="test-subject">
@@ -19,28 +18,22 @@
       </div>
       <!-- Output Here -->
       <section id="screen" class="screen">
-        <div class="canvas" id="the-link">
+        <!-- <div class="canvas" id="the-link"> -->
           <img src="img/mizan.jpg" id="image" alt="image">
           <img src="img/frame.png" id="frame" alt="frame">
           <h1 id="name"></h1>
         </div>
       </section>
-
-
     </div>
   </div>
   <div class="input">
     <input type="button" onclick="javascript:generateScreenshot()" value="Create Now">
   </div>
-
   <section id="test-result">
     <div><img src="" id="screenshot" alt="Plese Fill-up This Form then hit the create Button"></div>
     <pre id="size"></pre>
   </section>
   </div>
-
-
-
   <script src='js/html2canvas.min.js'></script>
   <script src="js/index.js"></script>
 </body>

@@ -10,6 +10,7 @@ if (window.File && window.FileReader && window.FileList && window.Blob) {
         reader.onload = function (event) {
             demoImage.src = reader.result;
             document.getElementById('name').innerHTML = text;
+            document.getElementById('screen').style.display = 'block';
         }
         reader.readAsDataURL(file);
         console.log(file)
@@ -18,10 +19,9 @@ if (window.File && window.FileReader && window.FileList && window.Blob) {
     alert("Your browser is too old to support HTML5 File API");
 }
 
-
 // for screen shot
 function generateScreenshot() {
-    document.getElementById("the-link").focus();
+    // document.getElementById("the-link").focus();
     setTimeout(() => {
         html2canvas(document.getElementById('screen'), {
             logging: true,
@@ -33,7 +33,7 @@ function generateScreenshot() {
             document.getElementById('screenshot').src = src;
             // document.getElementById('size').innerHTML = src.length + ' bytes';
             document.getElementById('screen').style.display = 'none';
-
+            document.getElementById('test-result').style.display = 'block';
         });
-    }, 1000);
+    }, 0);
 }
